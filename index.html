@@ -197,7 +197,7 @@
     .proj-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
     .proj-imgs .img-slot:first-child { grid-column: span 2; height: 280px; }
     .img-slot { height: 140px; background: var(--bg-card); position: relative; overflow: hidden; cursor: pointer; border: 1px solid rgba(212, 175, 55, 0.2); }
-    .img-slot img { width: 100%; height: 100%; object-fit: contain; display: none; position: absolute; top:0; left:0; transition: transform 0.5s ease; filter: sepia(20%);}
+    .img-slot img { width: 100%; height: 100%; object-fit: cover; display: none; position: absolute; top:0; left:0; transition: transform 0.5s ease; filter: sepia(20%);}
     .img-slot:hover img { transform: scale(1.05); filter: sepia(0%);}
     .slot-ph { display: flex; align-items: center; justify-content: center; height: 100%; font-family: var(--font-head); color: var(--gold-main); font-style: italic; opacity: 0.7; pointer-events: none;}
 
@@ -417,6 +417,7 @@
       <!-- Education 2 -->
       <div class="project-card fade-in">
         <div class="proj-imgs">
+        <div class="proj-row">
           <div class="img-slot" data-fi="fi-p1-4"><img src="poto5.jpeg" style="display:block;" /><div class="slot-ph">View</div></div>
           <div class="img-slot" data-fi="fi-p1-4"><img src="poto6.jpeg" style="display:block;" /><div class="slot-ph">View</div></div>
         </div>
