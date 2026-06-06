@@ -201,6 +201,23 @@
     .img-slot:hover img { transform: scale(1.05); filter: sepia(0%);}
     .slot-ph { display: flex; align-items: center; justify-content: center; height: 100%; font-family: var(--font-head); color: var(--gold-main); font-style: italic; opacity: 0.7; pointer-events: none;}
 
+
+    /* ---------------------------------------------------
+       8A. Addition (Editorial Style)
+       --------------------------------------------------- */
+    .education-gallery-container { width: 100%; max-width: 850px; margin: 40px auto; display: flex; flex-direction: column; gap: 20px; padding: 0 20px; box-sizing: border-box;}
+    .edu-slot-besar { width: 100%; height: auto; position: relative; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.2);}
+    .edu-baris-bawah { display: flex; justify-content: center; gap: 20px; width: 100%; flex-wrap: wrap;}
+    .edu-slot-kecil { flex: 1; min-width: 280px; max-width: 415px; position: relative; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.2);}
+    .edu-slot-besar img,
+    .edu-slot-kecil img { width: 100% !important; height: auto !important; display: block !important; transition: transform 0.5s ease;}
+    .edu-slot-besar:hover img,
+    .edu-slot-kecil:hover img { transform: scale(1.03);}
+    .edu-slot-besar .slot-ph,
+    .edu-slot-kecil .slot-ph { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.5); color: #fff; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;}
+    .edu-slot-besar:hover .slot-ph,
+    .edu-slot-kecil:hover .slot-ph { opacity: 1;}
+    
     /* ---------------------------------------------------
        9. EXPERIENCE (Classic Timeline)
        --------------------------------------------------- */
@@ -417,14 +434,22 @@
       </div>
 
       <!-- Education 2 -->
-      <div class="project-card fade-in">
-        <div class="proj-imgs">
-        <div class="proj-row">
-          <div class="img-slot" data-fi="fi-p1-4"><img src="poto5.jpeg" style="display:block;" /><div class="slot-ph">View</div></div>
-          <div class="img-slot" data-fi="fi-p1-4"><img src="poto6.jpeg" style="display:block;" /><div class="slot-ph">View</div></div>
-        </div>
-      </div>
+      <div class="education-gallery-container">
+  
+  <div class="edu-slot-besar">
+    <img src="poto5.jpeg" alt="Training 1" />
+    <div class="slot-ph">View</div>
+  </div>
+
+  <div class="edu-baris-bawah">
+    <div class="edu-slot-kecil">
+      <img src="poto6.jpeg" alt="Training 2" />
+      <div class="slot-ph">View</div>
     </div>
+    </div>
+
+</div>
+
   </section>
 
   <section id="experience">
